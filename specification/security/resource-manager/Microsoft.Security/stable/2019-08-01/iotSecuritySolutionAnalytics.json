@@ -571,7 +571,7 @@
     },
     "IoTSecurityAggregatedAlertProperties": {
       "type": "object",
-      "description": "Security Solution Aggregated Alert data",
+      "description": "Security solution aggregated alert data",
       "properties": {
         "alertType": {
           "readOnly": true,
@@ -659,7 +659,7 @@
           "description": "query in log analytics to get the list of affected devices/alerts"
         },
         "topDevicesList": {
-          "description": "List of the 10 devices with the top occurance of this alert at this day",
+          "description": "10 devices with the highest number of occurrences of this alert type, on this day.",
           "type": "array",
           "required": false,
           "readOnly": true,
@@ -667,17 +667,17 @@
             "deviceId": {
               "readOnly": true,
               "type": "string",
-              "description": "Name of the alert type"
+              "description": "Name of the device."
             },
             "alertsCount": {
               "readOnly": true,
               "type": "integer",
-              "description": "the number of alerts raised for this device"
+              "description": "Number of alerts raised for this device."
             },
             "lastOccurrence": {
               "type": "string",
-              "format": "date-time",
-              "description": "the latest date this allert was raised for this device"
+              "format": "time",
+              "description": "Most recent time this alert was raised for this device, on this day."
             }
           }
         }
@@ -685,7 +685,7 @@
     },
     "IoTSecurityAggregatedRecommendation": {
       "type": "object",
-      "description": "Security Solution Recommendation Information",
+      "description": "Security Solution Recommendation information",
       "properties": {
         "properties": {
           "x-ms-client-flatten": true,

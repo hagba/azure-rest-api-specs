@@ -571,7 +571,7 @@
     },
     "IoTSecurityAggregatedAlertProperties": {
       "type": "object",
-      "description": "Security solution aggregated alert data",
+      "description": "Security Solution Aggregated Alert Data",
       "properties": {
         "alertType": {
           "readOnly": true,
@@ -685,7 +685,7 @@
     },
     "IoTSecurityAggregatedRecommendation": {
       "type": "object",
-      "description": "Security Solution Recommendation information",
+      "description": "Security Solution Recommendation Information",
       "properties": {
         "properties": {
           "x-ms-client-flatten": true,
